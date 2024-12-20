@@ -1,0 +1,84 @@
+.app-wrapper{
+  margin:0;
+  color: darkblue;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.app-content {
+  flex: 1;
+}
+.padding_btm{
+  padding-bottom: 20px;
+}
+.global-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px 15px 10px 35px;
+  flex: 1;
+  position: relative;
+  background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat 10px center;
+  background-size: 20px 20px;
+}
+.search-input::before {
+  content: "\1F50D";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 18px;
+  pointer-events: none;
+}
+.sort-wrapper {
+  position: relative;
+}
+.sort-button {
+  padding: 10px 15px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sort-wrapper a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #0078d7;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sort-wrapper a:hover {
+  background: #f9f9f9;
+} 
+
+.sort-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  min-width: 150px;
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+}
